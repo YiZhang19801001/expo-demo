@@ -4,7 +4,7 @@ import { BarCodeScanner } from "expo-barcode-scanner";
 
 const initResult = "No Data";
 
-export default function App() {
+export default function App({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);
   const [result, setResult] = useState(initResult);
   const [scanned, setScanned] = useState(false);
@@ -36,7 +36,7 @@ export default function App() {
         <View style={styles.cancelButton}>
           <Button
             title={"Cancel"}
-            color="#fff"
+            color="red"
             onPress={() => {
               setScanned(true);
               setResult(initResult);
@@ -65,6 +65,14 @@ export default function App() {
         />
       )}
       {scanned && <Text>{result}</Text>}
+      {scanned && (
+        <Button
+          title={"Tap to Notification Page"}
+          onPress={() => {
+            navigation.navigate("Notification");
+          }}
+        />
+      )}
     </View>
   );
 }

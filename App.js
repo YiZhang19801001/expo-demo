@@ -1,11 +1,8 @@
 import React from "react";
 import { Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import {
-  createStackNavigator,
-  HeaderBackButton,
-} from "@react-navigation/stack";
-import { Login, Scanner } from "./pages";
+import { createStackNavigator } from "@react-navigation/stack";
+import { Login, Scanner, Notification } from "./pages";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Stack = createStackNavigator();
@@ -18,7 +15,6 @@ function App() {
         <Stack.Screen
           name="Scanner"
           options={({ navigation }) => ({
-            // headerBackTitle: "Logout",
             headerLeft: () => (
               <Button
                 title="Logout"
@@ -31,6 +27,7 @@ function App() {
           })}
           component={Scanner}
         />
+        <Stack.Screen name="Notification" component={Notification} />
       </Stack.Navigator>
     </NavigationContainer>
   );
