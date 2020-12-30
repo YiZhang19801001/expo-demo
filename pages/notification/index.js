@@ -24,9 +24,13 @@ export default function App() {
       setExpoPushToken(token);
       Axios.post("http://208.68.39.35:8181/api/tokens", {
         token,
-      }).then((res) => {
-        alert(JSON.stringify(res.data));
-      });
+      })
+        .then((res) => {
+          alert(JSON.stringify(res.data));
+        })
+        .catch((err) => {
+          alert(JSON.stringify(err));
+        });
     });
 
     // This listener is fired whenever a notification is received while the app is foregrounded
