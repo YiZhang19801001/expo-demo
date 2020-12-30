@@ -22,7 +22,7 @@ export default function App() {
   useEffect(() => {
     registerForPushNotificationsAsync().then((token) => {
       setExpoPushToken(token);
-      Axios.post("http://192.168.20.104:8181/api/tokens", {
+      Axios.post("http://208.68.39.35:8181/api/tokens", {
         token,
       }).then((res) => {
         alert(JSON.stringify(res.data));
