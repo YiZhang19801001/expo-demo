@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1056187800738",
+    "firebase_url": "https://expo-notification-server-default-rtdb.firebaseio.com",
+    "project_id": "expo-notification-server",
+    "storage_bucket": "expo-notification-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056187800738:android:ab047b00d3ebafae264bfb",
+        "android_client_info": {
+          "package_name": "com.harryroben.expodemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056187800738-gbi8oa7hcg6tmlos51jb2o07fsd5q8ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZt3dmbBhRUVboNuIchscEXDUueKnterc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056187800738-gbi8oa7hcg6tmlos51jb2o07fsd5q8ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
